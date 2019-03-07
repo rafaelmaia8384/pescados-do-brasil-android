@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="app_name">Pescados do Brasil</string>
+
+    <string-array name="spinner_regiao">
+        <item>Todas</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AM</item>
+        <item>AP</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MG</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>PR</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>RS</item>
+        <item>SC</item>
+        <item>SE</item>
+        <item>SP</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="spinner_armazenamento">
+        <item>Todos</item>
+        <item>Fresco</item>
+        <item>Congelado</item>
+        <item>Enlatado</item>
+        <item>Salgado</item>
+        <item>Defumado</item>
+    </string-array>
+
+    <string-array name="spinner_quantidade_disponivel">
+        <item>Todos</item>
+        <item>Mais de 1kg</item>
+        <item>Mais de 10kg</item>
+        <item>Mais de 50kg</item>
+        <item>Mais de 100kg</item>
+        <item>Mais de 500kg</item>
+        <item>Mais de 1000kg</item>
+    </string-array>
+
+</resources>

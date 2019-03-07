@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:onClick="abrirAnuncio"
+    android:foreground="?selectableItemBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@drawable/background_border"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="160dp"
+                    android:layout_height="144dp">
+
+                    <ImageView
+                        android:id="@+id/produtoImagem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_loading"/>
+
+                    <TextView
+                        android:id="@+id/produtoCategoria"
+                        android:padding="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorWhite"
+                        android:background="#6f111111"
+                        android:text="Camarão"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/produtoTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Título"
+                    android:maxLines="2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/produtoDescricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Descrição"
+                    android:textColor="@color/colorGray"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/produtoPreco"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:gravity="left"
+                        android:text="R$ 30,00 Kg"/>
+
+                    <TextView
+                        android:id="@+id/produtoArmazenamento"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:gravity="right"
+                        android:text="Congelado"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/produtoTipoAgua"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:gravity="left"
+                        android:text="Água salgada"/>
+
+                    <TextView
+                        android:id="@+id/produtoQuantidade"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:gravity="right"
+                        android:text="Mais de 1000 kg"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></View>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/anuncioPremium"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:padding="2dp"
+        android:src="@drawable/icon_premium"
+        android:background="@color/colorAccent"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/anuncioDiamante"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:padding="2dp"
+        android:src="@drawable/icon_diamond"
+        android:tint="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/anuncioProdutor"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:padding="2dp"
+        android:src="@drawable/icon_produtor"
+        android:background="@color/colorAccent"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
